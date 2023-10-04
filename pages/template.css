@@ -117,7 +117,7 @@
 /* --------4. Header (START)---------*/
 
 .navbar-nav {
-  min-width: 680px;
+  gap: 38px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -186,6 +186,8 @@
   padding-bottom: 10px;
   padding-top: 10px;
   color: #ffffff;
+  border-bottom: 1px solid rgba(61, 61, 61, 0);
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -203,6 +205,12 @@
   position: relative;
   border-left: 1px solid #2f2e32;
   border-right: 1px solid #2f2e32;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-nav {
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -290,7 +298,7 @@
 .flex-item__number {
   font-size: 60px;
   font-weight: 700;
-  height: 70px;
+  height: 4.375rem;;
   white-space: nowrap;
 }
 
@@ -366,6 +374,10 @@
     rgba(255, 255, 255, 0.03) 100%
   );
   padding-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  transition: color 0.3s ease, border-left 0.3s ease;
 }
 
 .flex-item_type_rt:hover {
@@ -390,6 +402,10 @@
 }
 
 .flex-item_type_rb {
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  transition: color 0.3s ease, border-top 0.3s ease;
+  transition: color 0.3s ease, border-left 0.3s ease;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -450,6 +466,10 @@
     rgba(255, 255, 255, 0.03) 100%
   );
   padding-right: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-right: 1px solid rgba(255, 255, 255, 0);
+  transition: color 0.3s ease, border-top 0.3s ease;
+  transition: color 0.3s ease, border-right 0.3s ease;
 }
 
 .flex-item_type_lb:hover {
@@ -491,6 +511,10 @@
     rgba(255, 255, 255, 0) 25%,
     rgba(255, 255, 255, 0.03) 100%
   );
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  border-right: 1px solid rgba(255, 255, 255, 0);
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  transition: color 0.3s ease, border-right 0.3s ease;
 }
 
 .flex-item_type_lt:hover {
